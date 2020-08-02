@@ -10,12 +10,9 @@
     <div class="col-md-10 offset-md-1">
         <section>
             <div class="log-form-icon">
-                <i class="fas fa-user-circle fa-9x text-secondary">
-
-                </i>
+                <i class="fas fa-user-circle fa-9x text-secondary"></i>
             </div>
-            <form id="account" method="post">
-                
+            <form id="account" method="post">               
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">
                     <label asp-for="Input.Email"></label>
@@ -36,16 +33,9 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn block">Log in</button>
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
                 </div>
-                <div class="form-group">
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
-                    </p>
-                    
+                <div class="form-group">                   
                 </div>
             </form>
         </section>

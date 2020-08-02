@@ -3,15 +3,15 @@
 }
 
 <div class="row">
-    <div class="com-md-6 offset-md-3">
+    <div class="col-md-6 offset-md-3">
         <div class="card login-logout-tab">
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href='/Identity/Account/Login'>Sign In</a>
+                        <a class="nav-link" href='/Identity/Account/Login'>Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href='/Identity/Account/Register'>Sign In</a>
+                        <a class="nav-link" href='/Identity/Account/Register'>Register</a>
                     </li>
                 </ul>
 
@@ -35,7 +35,7 @@
 
 <script>
     $(function () {
-        var Current = location.pathname;
+        var current = location.pathname;
         $('.nav-tabs li a').each(function () {
             var $this = $(this);
             if (current.indexOf($this.attr('href')) !== -1) {

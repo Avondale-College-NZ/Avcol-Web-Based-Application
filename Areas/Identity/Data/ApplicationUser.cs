@@ -12,10 +12,10 @@ namespace Avondale_College.Areas.Identity.Data
     {
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
-       public string FristName { get; set; }
+       public string FullName { get; set; }
 
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
-        public string LastName { get; set; }
+        public string TeacherOrStudent { get; set; }
     }
 }

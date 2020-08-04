@@ -50,14 +50,14 @@ namespace Avondale_College.Areas.Identity.Pages.Account
         {
             [Required]
             [DataType(DataType.Text)]
-            [Display(Name = "First Name")]
-            public string FirstName { get; set; }
+            [Display(Name = "Full Name")]
+            public string FullName { get; set; }
 
 
             [Required]
             [DataType(DataType.Text)]
-            [Display(Name = "Last Name")]
-            public string LastName { get; set; }
+            [Display(Name = "Teacher or Student")]
+            public string TeacherOrStudent { get; set; }
 
 
             [Required]
@@ -96,7 +96,7 @@ namespace Avondale_College.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email,FristName = Input.FirstName,LastName = Input.LastName};
+                var user = new ApplicationUser { UserName = Input.Email, Email = Input.Email,FullName = Input.FullName,TeacherOrStudent = Input.TeacherOrStudent};
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {

@@ -1,4 +1,4 @@
-Installation
+Installation-
 1- Run SQL Server.
 2- Run Visual Studio 2019.
 3- Open appsettings.json file and change the connection string. 
